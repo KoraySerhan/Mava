@@ -1,0 +1,239 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url("banner1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.header {
+    background-color: transparent; /* Şeffaf arka plan rengi */
+    background-color: rgba(128, 128, 128, 0.5); /* Gri tonu ve opaklık */
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    width: 200px;
+    height: 50px;
+    margin-left: auto; /* Önceki margin-right stilini kaldırın */
+    margin-right: 1200px; /* İhtiyaca göre ayarlayabilirsiniz */
+}
+
+h2 {
+    font-size: 40px; /* Büyük yazı boyutu */
+    text-align: left; /* Yazıyı sola kaydır */
+    margin-top: 300px; /* Aşağıya kaydırarak konumu ayarla */
+    margin-left: 50px; /* Sola kaydırarak konumu ayarla */
+    color: white; /* Beyaz yazı rengi */
+}
+
+.main-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.main-menu li {
+    margin-left: 30px;
+    position: relative;
+}
+
+.main-menu li:first-child {
+    margin-left: 0;
+}
+  
+.main-menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.submenu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgba(128, 128, 128, 0.5); /* Gri tonu ve opaklık */
+    display: none;
+}
+
+.submenu li {
+    margin-left: 0;
+}
+
+.submenu li a {
+    color: white;
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.main-menu li:hover .submenu {
+    display: block;
+}
+
+/* Diğer stil tanımlamaları burada yer alır */
+
+.container {
+    background-color: rgba(128, 128, 128, 0.5); /* Gri tonu ve opaklık */
+    padding: 50px 20px; /* Üst ve alt kenar boşlukları */
+    text-align: center;
+    margin-top: 250px; /* Kutuyu yukarı kaydırır */
+}
+
+.container h2 {
+    color: white;
+    font-size: 28px;
+    margin: 0;
+    margin-top: 30px; /* Başlığı daha aşağı kaydırır */
+}
+
+.product-boxes {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.product-box {
+    display: block;
+    width: calc(33.33% - 20px);
+    text-decoration: none;
+    color: white;
+    transition: transform 0.2s ease-in-out;
+}
+
+.product-box:hover {
+    transform: scale(1.1);
+}
+
+.product-box img {
+    width: 100%;
+    height: auto;
+}
+
+.centered-text {
+    text-align: center;
+    margin-top: 200px; /* Metni yukarı kaydırarak konumu ayarlar */
+}
+
+.centered-text p {
+    font-size: 100px; /* Yazı boyutunu büyüttük */
+    color: white;
+    margin-left:-800px; /* Yazıyı sola kaydırdık */
+}
+
+.centered-text2 {
+    text-align: center;
+    margin-top: 25px; /* Metni yukarı kaydırarak konumu ayarlar */
+}
+
+.centered-text2 p {
+    font-size: 30px; /* Yazı boyutunu büyüttük */
+    color: #ffd700;;
+    margin-left: -900px; /* Yazıyı sola kaydırdık */
+}
+
+.centered-button {
+    text-align: center;
+    margin-top: 20px; /* Butonun üst boşluğunu ayarlar */
+    margin-left: -1580px; /* Butonu sola kaydır */
+}
+
+.detail-button {
+    display: inline-block;
+    padding: 18px 36px;
+    font-size: 18px;
+    background-color: #ffd700;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.detail-button:hover {
+    background-color: #0056b3;
+}
+
+
+.container2 {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 20px;
+    margin-top: 50px;
+}
+
+.container2 img {
+    width: 30%; /* Resim alanının genişliğini ayarlar */
+    height: auto;
+    margin-left: auto;
+    margin-right: 200px; /* Sağa kaydırma miktarını ayarlar */
+}
+
+.container2-text h3 {
+    font-size: 48px; /* Başlık yazı boyutunu büyüttük */
+    margin-bottom: 10px; /* Başlık alt boşluğunu ayarladık */
+}
+
+.container2-text {
+    width: 45%; /* Yazı alanının genişliğini ayarlar */
+    text-align: left;
+    color: black;
+    font-size: 18px;
+    margin-left: auto;
+    margin-right: 100px; /* Sağa kaydırma miktarını ayarlar */
+    margin-top: -300px; /* Yukarı kaydırma miktarını ayarlar */
+}
+
+
+.container3 {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 128, 0.7)), url("counter-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 50px 20px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;;
+}
+
+.container3-text {
+    width: 70%; /* Yazı alanının genişliğini ayarlar */
+}
+
+.contact-button {
+    background-color: #ffd700;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: 100px; /* Sağa kaydırma miktarını ayarlar */
+}
+
+
+.container .copyright-text {
+    background-color: white;
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 20px;
+    color: black; /* Metin rengini ayarlar */
+}
+
+
+
+

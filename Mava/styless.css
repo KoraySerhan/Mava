@@ -1,0 +1,82 @@
+/* Temel stil ayarları */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url("banner1.jpg");
+    background-color: gray;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+/* Başlık ve logo stil ayarları */
+header {
+    background-color: gray;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header img {
+    max-width: 100px;
+    height: auto;
+}
+
+/* Ana içerik alanı stil ayarları */
+main {
+    padding: 20px;
+}
+
+/* Altbilgi stil ayarları */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #f2f2f2;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: 800px; /* Sağa boşluk eklemek için */
+}
+
+.button {
+    display: block;
+    margin-bottom: 10px;
+    padding: 8px 12px;
+    background-color: gray;
+    color: white;
+    text-decoration: none;
+}
+
+/* Resimler stil ayarları */
+.images {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Sol tarafa hizala */
+    margin-left: 20px; /* Sola boşluk vermek için */
+}
+
+.top-row,
+.bottom-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; /* Alt boşluk eklemek için */
+    color: white; /* Yazı rengini beyaz yap */
+}
+
+.top-row img,
+.bottom-row img {
+    max-width: 150px;
+    height: auto;
+    margin-right: 10px;
+}
